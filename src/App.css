@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --light-purple:rgb(254, 236, 254);
+    --dark-purple: rgb(202, 50, 236);
+    --whitesmoke:whitesmoke;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: var(--light-purple);
+}
+
+.container h3{
+    line-height: 3rem;
+    font-size: 6rem;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    font-family: "Cinzel", sans-serif;
+}
+
+.container h3 span{
+    font-size: 4rem;
+    color: var(--dark-purple);
+}
+
+.container p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.container button{
+    padding: 0.35rem 1.05rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: var(--dark-purple);
+    color: var(--whitesmoke) ;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all .4s ease-out;
+}
+
+.container button:hover{
+    padding: 0.3rem 1rem;
+    background-color: var(--whitesmoke);
+    border: 1px solid var(--dark-purple);
+    color:var(--dark-purple);
+}
+
+.containerr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 100vh;
+    background-color: var(--dark-purple);
+}
+
+.containerr .cameraBox{
+    height: 50vh;
+    width: 50vw;
+    border-radius: 20px;
+    background-color: var(--whitesmoke);
+
+}
+
+.containerr .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.containerr button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 1.05rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: var(--whitesmoke);
+     border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all .4s ease-out;
+}
+
+.containerr button:hover{
+    padding: 0.3rem 1rem;
+    background-color: var(--dark-purple);
+    color: var(--whitesmoke) ;
+    border: 1px solid var(--whitesmoke);
+}
+
+/* Popup box */
+.overlay {
+position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.popup {
+  background: var(--light-purple);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.overlay .popup .close{
+   position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--dark-purple);
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-purple);
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.overlay .popup h2{
+  margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: "Cinzel", sans-serif;
+}
+
+.overlay .popup .imageBox{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.overlay .popup .imageBox .box img{
+   width: 200px;
+   height: 200px;
+   background-size: cover;
+   border-radius: 2px;
+}
+
+.overlay .popup .imageBox .box p{
+   border-bottom:2px solid var(--dark-purple);
+   border-right:2px solid var(--dark-purple) ;
+   padding: none;
+}
+
+.overlay .popup .imageBox .box {
+ transition: all .3s ease-out;
+}
+
+.overlay .popup .imageBox .box:hover {
+  scale: 1.1;
+}
+
+.overlay .popup .continue{
+    padding: 0.35rem 1.05rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-color: var(--dark-purple);
+    color: var(--whitesmoke) ;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all .4s ease-out;
+}
+
+.overlay .popup .continue:hover{
+    padding: 0.3rem 1rem;
+    background-color: var(--whitesmoke);
+    border: 1px solid var(--dark-purple);
+    color:var(--dark-purple);
+}
