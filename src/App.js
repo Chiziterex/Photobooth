@@ -1,8 +1,9 @@
-import React from 'react';
 import './App.css';
+import './mobile.css';
 import Photobooth from './components/photobooth';
 import Homestart from './components/home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
 
