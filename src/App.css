@@ -175,8 +175,13 @@ position: fixed;
  transition: all .3s ease-out;
 }
 
-.overlay .popup .imageBox .box:hover {
+/* .overlay .popup .imageBox .box:hover {
   scale: 1.1;
+} */
+
+.overlay .popup .imageBox .selected {
+  scale: 1.1;
+  border: 1px solid var(--dark-purple);
 }
 
 .overlay .popup .continue{
@@ -196,4 +201,35 @@ position: fixed;
     background-color: var(--whitesmoke);
     border: 1px solid var(--dark-purple);
     color:var(--dark-purple);
+}
+
+.cameraPage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.cameraPage h2{
+  margin-top: 1rem;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-size: 2rem;
+  color: var(--dark-purple);
+  font-family: "Cinzel", sans-serif;
+   box-shadow: 2px 2px 5px var(--dark-purple);
+}
+
+.cameraPage .cameraBox .countdown{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-purple);
+}
+
+.cameraPage .setcapture{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-purple);
+  border-radius: 2px soid var(--light-purple);
 }

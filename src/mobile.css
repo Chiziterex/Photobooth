@@ -31,5 +31,9 @@
    height: 100px;
 }
 
+.cameraPage h2{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
 
 }
