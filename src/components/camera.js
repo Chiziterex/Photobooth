@@ -82,7 +82,7 @@ function Camera() {
 
   return (
     <div className="cameraPage">
-      <h2>Smile! 📸</h2>
+      <h2>Pose! 📸</h2>
 
       <div className="cameraBox">
         <video ref={videoRef} autoPlay playsInline></video>

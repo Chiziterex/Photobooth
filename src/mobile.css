@@ -36,4 +36,19 @@
     font-size: 1.5rem;
   }
 
+  .editorPage .photoGrid img{
+    width: 90vw;
+    height: 50vh;
+   }
+
+   .cameraPage .cameraBox video{
+    width: 300px;
+    height: 300px;
+  }
+
+   .cameraPage .previewGrid img{
+    width: 300px;
+    height: 250px;
+  }
+
 }

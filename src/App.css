@@ -54,6 +54,7 @@
     border: none;
     border-radius: 10px;
     font-weight: 500;
+    cursor: pointer;
     transition: all .4s ease-out;
 }
 
@@ -98,6 +99,7 @@
      border: none;
     border-radius: 10px;
     font-weight: 500;
+    cursor: pointer;
     transition: all .4s ease-out;
 }
 
@@ -193,6 +195,7 @@ position: fixed;
     border: none;
     border-radius: 10px;
     font-weight: 500;
+  cursor: pointer;
     transition: all .4s ease-out;
 }
 
@@ -209,16 +212,25 @@ position: fixed;
   justify-content: space-between;
   min-height: 100vh;
   flex-direction: column;
+  background-color: var(--light-purple);
 }
 
-.cameraPage h2{
-  margin-top: 1rem;
+.cameraPage h2, .editorPage h2{
+  margin: 1rem 0;
   padding: 3px 5px;
   border-radius: 2px;
   font-size: 2rem;
   color: var(--dark-purple);
   font-family: "Cinzel", sans-serif;
    box-shadow: 2px 2px 5px var(--dark-purple);
+}
+
+.cameraPage .cameraBox video{
+  width: 70vw;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
 }
 
 .cameraPage .cameraBox .countdown{
@@ -229,7 +241,103 @@ position: fixed;
 
 .cameraPage .setcapture{
   text-align: center;
-  font-size: 2rem;
-  color: var(--dark-purple);
-  border-radius: 2px soid var(--light-purple);
+  padding: 0.2rem 0.75rem;
+  font-size: 1rem;
+  color: var(--whitesmoke);
+  background-color: var(--dark-purple);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.cameraPage .previewGrid{
+  margin: 2rem 0;
+}
+
+.cameraPage .previewGrid div{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 0.75rem;
+}
+
+.cameraPage .previewGrid img{
+  width: 700px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.cameraPage .previewGrid button{
+  text-align: center;
+  padding: 0.2rem 0.75rem;
+  font-size: 1rem;
+  color: var(--whitesmoke);
+  background-color: var(--dark-purple);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.controls, .editorButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+ margin-bottom: 1rem;
+}
+
+.editorButtons{
+  margin: 1rem 0;
+ }
+
+.controls button, .editorButtons button{
+  text-align: center;
+  padding: 0.2rem 0.75rem;
+  font-size: 1rem;
+  color: var(--whitesmoke);
+  background-color: var(--dark-purple);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.editorPage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--light-purple);
+}
+
+.editorPage .photoGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editorPage .photoGrid img{
+  width: 700px;
+  height: 500px;
+  border-radius: 4px;
+  border: 2px solid var(--dark-purple);
+}
+
+.editorPage .emojiBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1rem 0 0 0;
+}
+
+.editorPage .emojiBar button{
+  font-size: 1.25rem;
+  border: 1px solid var(--dark-purple);
+  border-radius: 2px;
 }
