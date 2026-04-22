@@ -1,54 +1,56 @@
-@media (max-width: 600px){
-
-    .container h3{
+@media (max-width: 600px) {
+  .container h3 {
     line-height: 2.5rem;
     font-size: 4rem;
     letter-spacing: 0.2rem;
-}
+  }
 
-.container h3 span{
+  .container h3 span {
     font-size: 3rem;
-}
+  }
 
-.container button{
-    padding: 0.3rem 1.0rem;
+  .container button {
+    padding: 0.3rem 1rem;
     font-size: 1rem;
     font-weight: 400;
-}
+  }
 
-.container p{
+  .container p {
     font-size: 1rem;
     line-height: 1.2rem;
-}
+  }
 
- .containerr .cameraBox{
+  .containerr .cameraBox {
     height: 50vh;
     width: 80vw;
-}
- 
-.overlay .popup .imageBox .box img{
-   width: 100px;
-   height: 100px;
-}
+  }
 
-.cameraPage h2{
+  .overlay .popup .imageBox .box img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cameraPage h2,
+  .editorPage h2 {
     margin-top: 0.5rem;
     font-size: 1.5rem;
   }
 
-  .editorPage .photoGrid img{
-    width: 90vw;
-    height: 50vh;
-   }
-
-   .cameraPage .cameraBox video{
-    width: 300px;
-    height: 300px;
+  .editorPage h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
   }
 
-   .cameraPage .previewGrid img{
+  .editorPage .photoGrid img {
+    width: 300px;
+  }
+
+  .cameraPage .cameraBox video {
+    width: 350px;
+  }
+
+  .cameraPage .previewGrid img {
     width: 300px;
     height: 250px;
   }
-
 }

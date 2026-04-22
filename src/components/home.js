@@ -13,7 +13,7 @@ function Homestart() {
   const [isUploadPopupOpen, setIsUploadPopupOpen] = useState(false);
   const [selectedShots, setSelectedShots] = useState(null);
   const navigate = useNavigate();
-
+  
   const handleCameraContinue = () => {
     if (!selectedShots) {
       alert("Please select the number of shots.");
@@ -47,13 +47,6 @@ function Homestart() {
   
   const templates = [pic1, pic2, pic3, pic4];
 
-  const items = document.querySelectorAll('.box');
-
-  items.forEach(div => {
-    div.addEventListener('click', () => {
-      div.classList.add('selected');
-    });
-  });
 
 
 

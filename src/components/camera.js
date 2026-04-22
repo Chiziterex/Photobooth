@@ -95,7 +95,7 @@ function Camera() {
           onClick={startCapture}
           disabled={isCapturing}
         >
-          Start Capture
+          Snap
         </button>
       ) : (
         <>

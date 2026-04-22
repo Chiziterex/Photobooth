@@ -72,7 +72,7 @@ function Editor() {
       </div>
 
       <div className="editorButtons">
-        <button onClick={() => navigate("/")}>Retake</button>
+        <button onClick={() => navigate("/camera")}>Retake</button>
         <button onClick={downloadImage}>Download</button>
       </div>
 
