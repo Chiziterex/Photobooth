@@ -23,6 +23,7 @@
     justify-content: center;
     min-height: 100vh;
     flex-direction: column;
+    /* backdrop-filter: blur(10px); */
     background-color: var(--light-purple);
 }
 
@@ -177,6 +178,13 @@ position: fixed;
   scale: 1.1;
   cursor: pointer;
     transition: all .4s ease-out;
+} 
+
+
+.overlay .popup .imageBox .box.active p{
+  background-color: var(--dark-purple);
+  color: var(--whitesmoke);
+  padding: 3px 0;
 } 
 
 .overlay .popup .continue{
